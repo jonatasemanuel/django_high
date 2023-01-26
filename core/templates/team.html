@@ -8,13 +8,11 @@
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-12 col-xs-12">
-          <!-- Team Item Starts -->
           {% for emp in employees %}
           <!-- Team Item Starts -->
           <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
             <div class="team-img">
-              <img class="img-fluid" src="{{ emp.image.thumb.url }}" alt="{{ emp.name }}">
-            </div>
+              <img class="img-fluid" src="{{ emp.image.thumb.url }}" alt="{{ emp.name }}"></div>
             <div class="contetn">
               <div class="info-text">
                 <h3><a href="#">{{ emp.name }}</a></h3>
@@ -26,11 +24,12 @@
                 <li><a href="{{ emp.twitter }}"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
                 <li><a href="{{ emp.instagram }}"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
               </ul>
+              
             </div>
-            {% endfor %}
           </div>
-          
+          {% endfor %}
         </div>
       </div>
+      
     </div>
   </section>
